@@ -17,3 +17,5 @@
 
 (defvar *file*
   (file-contents "~/Development/lisp/data/page.md"))
+
+; (lisp-md-header *file*)
