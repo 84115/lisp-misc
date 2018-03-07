@@ -13,6 +13,7 @@
 (load-local "util/io")
 (load-local "util/math")
 (load-local "util/string")
+(load-local "dev/markdown")
 
 ; (print
 ;    (split '(#\space) "my name is james"))
@@ -20,5 +21,4 @@
 (defvar file
   (file-contents "~/Development/lisp/data/page.md"))
 
-; (split '(#\return #\linefeed) file)
-; (cdr (member "---" (cdr (split '(#\return #\linefeed) file)) :test #'string=))
+; (parse-md-header file)

@@ -27,6 +27,14 @@
                                     str))))
          (join str (rest lst) news)))))
 
-(defun range (start stop &optional (step 2))
+(defun break-list-at(lst breaker)
+  (let ((acc '()))
+    (reverse
+      (dolist (str lst)
+        (if (string-equal str breaker)
+            (return acc)
+            (setf acc (cons str acc))))) acc))
+
+(defun range (start stop &optional (step 1))
   (when (<= start stop)
     (cons start (range (+ start step) stop step))))

@@ -4,3 +4,9 @@
     (let* ((len (file-length s))
            (data (make-string len)))
       (values data (read-sequence data s)))))
+
+; (walk-directory "~/Development/lisp/" "*")
+; (walk-directory "~/Development/lisp/" "*.*")
+(defun walk-directory (directory pattern)
+  ""
+  (directory (merge-pathnames pattern directory)))
