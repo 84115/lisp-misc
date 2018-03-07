@@ -18,4 +18,7 @@
 (defvar *file*
   (file-contents "~/Development/lisp/data/page.md"))
 
+; http://lisp-lang.org/style-guide/
+; http://lisp-lang.org/style-guide/#comment-hierarchy
+
 ; (lisp-md-header *file*)
