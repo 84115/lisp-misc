@@ -20,7 +20,9 @@
 
 ; (parse-md-header file)
 
-(split '(#\:) "key: value")
-(string-trim " " "  key: value  ")
+; (split '(#\:) "key: value")
+; (string-trim " " "  key: value  ")
 
-(map 'list (lambda (x) (+ x 10)) '(1 2 3 4))
+(map 'list (lambda (s)
+             (split '(#\:) s)) (parse-md-header file))
+
