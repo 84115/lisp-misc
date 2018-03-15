@@ -13,7 +13,8 @@
 (load-local "util/io")
 ; (load-local "util/math")
 (load-local "util/string")
-(load-local "dev/markdown")
+; (load-local "dev/markdown")
+(load-local "playground/macro-def")
 
 ;(defvar *file*
 ;  (file-contents "~/Development/lisp-misc/data/page.md"))
